@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap">
+    <h1>Simon Electronic Memory Game</h1>
+    <h3>Rules: 
+        <br>
+        1. Press Start button
+        <br>
+        2. Wait for Sequence to be played 
+        <br>
+        3. Press buttons only after the sequence is played
+        <br>
+        4. Pads will flash 5 times if the wrong sequence is entered
+    </h3>
+</head>
+
+<body>
+    <div class="greenCircle circles" id="greenCircle" onclick="userInput('greenCircle')"></div>
+    <div class="redCircle circles" id="redCircle" onclick="userInput('redCircle')"></div>
+    <div class="yellowCircle circles" id="yellowCircle" onclick="userInput('yellowCircle')"></div>
+    <div class="blueCircle circles" id="blueCircle" onclick="userInput('blueCircle')"></div>
+    <div class="blackCircle"></div>
+    <div class="startLight" id="startLight"></div>
+    <button class="startButton" onclick="startGame()" style="font-size: 25px;">Click to Start</button>
+    <div class="scoreDisplay" id="scoreDisplay">Score: 0</div>
+    <div class="highScoreDisplay" id="highScoreDisplay">High Score: 0</div>
+</body>
+</html>
